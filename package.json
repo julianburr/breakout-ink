@@ -1,0 +1,53 @@
+{
+	"name": "breakout-ink",
+	"version": "0.0.3",
+	"license": "MIT",
+	"bin": {
+		"breakout": "cli.js"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"start": "node cli.js"
+	},
+	"files": [
+		"cli.js",
+		"src"
+	],
+	"dependencies": {
+		"clear": "^0.1.0",
+		"import-jsx": "^3.0.0",
+		"ink": "^2.3.0",
+		"meow": "^5.0.0",
+		"prop-types": "^15.7.2",
+		"react": "^16.9.0",
+		"react-dom": "^16.9.0",
+		"react-redux": "^7.1.1",
+		"redux": "^4.0.4"
+	},
+	"devDependencies": {
+		"@babel/preset-react": "^7.0.0",
+		"@babel/register": "^7.5.5",
+		"ava": "^2.2.0",
+		"chalk": "^2.4.2",
+		"eslint-config-xo-react": "^0.20.0",
+		"eslint-plugin-react": "^7.14.3",
+		"eslint-plugin-react-hooks": "^1.7.0",
+		"ink-testing-library": "^1.0.2",
+		"xo": "^0.24.0"
+	},
+	"ava": {
+		"require": [
+			"@babel/register"
+		]
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-react"
+		]
+	},
+	"xo": {
+		"extends": "xo-react"
+	}
+}
